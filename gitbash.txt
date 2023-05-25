@@ -1,0 +1,240 @@
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/chefr/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora/.git/
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Calculadora.html
+        Calculadora.iml
+        Calculadora.js
+        Style.css
+        EjerciciosPracticos/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git add .
+warning: in the working copy of 'EjerciciosPracticos/Main.java', LF will be replaced by CRLF the next time Git touches it
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Calculadora.html
+        new file:   Calculadora.iml
+        new file:   Calculadora.js
+        new file:   Style.css
+        new file:   EjerciciosPracticos/Main.java
+
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git commit -m "calculadora.frontend"
+[main (root-commit) 15e354d] calculadora.frontend
+ 5 files changed, 44 insertions(+)
+ create mode 100644 Calculadora.html
+ create mode 100644 Calculadora.iml
+ create mode 100644 Calculadora.js
+ create mode 100644 Style.css
+ create mode 100644 EjerciciosPracticos/Main.java
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git remote add origin https://github.com/DanielLobos2894/calculadora.frontend.DL.git
+error: remote origin already exists.
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git push -u origen main
+fatal: 'origen' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git push -u main principal
+error: EjerciciosPracticos refspec principal does not match any
+error: failed to push some refs to 'main'
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.05 KiB | 538.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DanielLobos2894/calculadora.frontend.DL.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git remote add upstream https://github.com/DanielLobos2894/calculadora.frontend.DL.git
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Calculadora.iml
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Calculadora.html
+        deleted:    Calculadora.js
+        modified:   Style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        script.js
+
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git add .
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Calculadora.html
+        deleted:    Calculadora.iml
+        deleted:    Calculadora.js
+        modified:   Style.css
+        new file:   script.js
+
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git branch -M main
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Calculadora.html
+        deleted:    Calculadora.iml
+        deleted:    Calculadora.js
+        modified:   Style.css
+        new file:   script.js
+
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Calculadora.html
+        deleted:    Calculadora.iml
+        deleted:    Calculadora.js
+        modified:   Style.css
+        new file:   script.js
+
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git add .
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Calculadora.html
+        deleted:    Calculadora.iml
+        deleted:    Calculadora.js
+        modified:   Style.css
+        new file:   script.js
+
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git commit -m "Actualizacion"
+[main ca0c990] Actualizacion
+ 5 files changed, 68 insertions(+), 30 deletions(-)
+ delete mode 100644 Calculadora.iml
+ delete mode 100644 Calculadora.js
+ create mode 100644 script.js
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.32 KiB | 449.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DanielLobos2894/calculadora.frontend.DL.git
+   15e354d..ca0c990  main -> main
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    EjerciciosPracticos/Main.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git add .
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git commit "Reparo de archivos"
+error: pathspec 'Reparo de archivos' did not match any file(s) known to git
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git commit -m "Reparo de archivos"
+[main 62584e2] Reparo de archivos
+ 1 file changed, 5 deletions(-)
+ delete mode 100644 EjerciciosPracticos/Main.java
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 234 bytes | 234.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DanielLobos2894/calculadora.frontend.DL.git
+   ca0c990..62584e2  main -> main
+
+chefr@PC-LOBOS MINGW64 ~/OneDrive/Escritorio/Programacion2/Proyecto/JS--0056/Calculadora (main)
+$
